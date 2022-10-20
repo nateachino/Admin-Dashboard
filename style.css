@@ -1,130 +1,164 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.container{
-    display: grid;
-    grid-template: 1fr 5fr / 1fr 5fr 
+.container {
+  display: grid;
+  grid-template: 0.5fr 5fr / 1fr 5fr;
 }
 
-#right-icon,
-#main-icon{
-    height: 50px;
-    width: 50px;
+#right-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #f59e0b;
+  border-radius: 50%;
 }
 
-img{
-    align-self: center;
+#main-icon {
+  height: 80px;
+  width: 80px;
+  background-color: #f59e0b;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
-.search-bar{
-    background-color: black;
-    width: 400px;
-    height: 30px;
-    border-radius: 100px;
+button {
+  background-color: #0ea5e9;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin: 20px;
+  color: white;
+  font-weight: 600;
 }
 
-.left-header{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.search-bar {
+  background-color: #e2e8f0;
+  width: 400px;
+  height: 30px;
+  border-radius: 100px;
 }
 
-.left-header>img{
-    width: 30px;
-    height: 30px;
+.left-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.right-header{
-    display: flex;
-    align-items: center;
+.left-header > img {
+  width: 30px;
+  height: 30px;
 }
 
-.right-header,.left-header{
-    gap: 16px;
+.right-header {
+  display: flex;
+  align-items: center;
 }
 
-.top-header,.bottom-header{
-    display: flex;
-    justify-content: space-between;
-    flex-shrink: 0;
+.right-header,
+.left-header {
+  gap: 16px;
 }
 
-.left-bot-header{
-    display: flex;
-    align-items: center;
+.top-header,
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 
-.bot-text{
-    display: flex;
-    flex-direction: column;
+.left-bot-header {
+  display: flex;
+  align-items: center;
 }
 
-.bottom-header{
-    align-items: center;
-
+.bot-text {
+  display: flex;
+  flex-direction: column;
 }
 
-.sidebar{
-    grid-column: 1;
-    grid-row: 1 /span 2;
-    background-color: yellow;
-
-    display: flex;
-    flex-direction: column;
-    gap:40px;
-    padding-left: 8px;
-    
+.bottom-header {
+  align-items: center;
 }
 
-.top-side,.mid-side >div,.bottom-side>div{
-    display:flex;
-    align-items: center;
-    gap: 5px
+.sidebar {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  background-color: #0ea5e9;
+  color: white;
+  display: grid;
+  grid-template-rows: 100px 1fr 4fr;
+  align-items: start;
+  padding: 10px;
 }
 
-
-header{
-    background-color: blue;
-    grid-column: 2;
-    grid-row: 1;
-    padding: 8px;
-    padding-right: 20px;
-    padding-left: 20px;
-
+.top-side,
+.mid-side > div,
+.bottom-side > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.main-content{
-    background-color: red;
-    grid-column: 2;
-    grid-row:2;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+.top-side {
+  grid-row: 1;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 10px;
 }
 
-.projects{
-    display: grid;
-    grid-template-rows: 50px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
-    gap: 20px
+.mid-side {
+  grid-row: 2;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.project-text{
-    grid-column: 1/span 3;
-    display: flex;
-    align-items: flex-end;
-
+.bottom-side {
+  grid-row: 3;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-.projects>div.card{
-    width: 250px;
-    height: 200px;
-    background-color: green;
+header {
+  background-color: white;
+  grid-column: 2;
+  grid-row: 1;
+  padding: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.announcements{
-    grid-column: 2;
-    grid-row:2;
+.main-content {
+  background-color: #e2e8f0;
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-text {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: flex-end;
+}
+
+.projects > div.card {
+  height: 250px;
+  background-color: white;
+}
+
+.announcements {
+  grid-column: 2;
+  grid-row: 2;
 }
