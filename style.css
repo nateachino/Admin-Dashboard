@@ -76,7 +76,7 @@ button {
   align-items: center;
 }
 
-.right-bot-header{
+.right-bot-header {
   white-space: nowrap;
 }
 
@@ -125,7 +125,6 @@ button {
   grid-row: 3;
   font-weight: 600;
   font-size: 20px;
-
 }
 
 header {
@@ -152,7 +151,6 @@ header {
   padding-top: 10px;
 }
 
-
 .project-text {
   grid-column: 1 / span 2;
   display: flex;
@@ -162,7 +160,12 @@ header {
 .projects > div.card {
   height: 250px;
   background-color: white;
-  margin-right: 20px;
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+.card > p {
+  font-size: clamp(16px, 0.8vw, 24px);
 }
 
 .announcements {
