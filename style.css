@@ -275,3 +275,10 @@ header {
 #bot {
   font-size: 15px;
 }
+
+.project-text,
+.announcement-text,
+.trending-text {
+  font-weight: 600;
+  font-size: 20px;
+}
