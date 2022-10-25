@@ -163,6 +163,7 @@ header {
   margin: 20px;
   padding: 20px;
   overflow: hidden;
+  border-left: #f59e0b 5px solid;
 }
 .card > p {
   font-size: clamp(16px, 0.8vw, 24px);
